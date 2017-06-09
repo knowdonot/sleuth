@@ -1,0 +1,23 @@
+server:
+  port: 9411
+spring:
+  application:
+    name: sleuth-zipkin-stream
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 10.167.202.187:9092
+          zk-nodes: 10.167.202.187:2181
+  datasource: 
+    url: jdbc:mysql://localhost:3306/zipkin
+    username: root
+    password: root
+    initialize: true
+    continueOnError: true
+  sleuth:
+    enabled: false
+zipkin:
+  storage:
+    type: mysql
+  
