@@ -126,7 +126,7 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<configuration>
 					<imageName>${docker.registry}/${docker.registry.name}/${project.artifactId}:${project.version}</imageName>
-					<dockerDirectory>src/main/resources</dockerDirectory>
+					<dockerDirectory>src/main/docker</dockerDirectory>
 					<dockerHost>http://10.167.202.164:2375</dockerHost>
 					<!-- <dockerCertPath>C:\Users\Administrator\.docker\machine\machines\mycompany</dockerCertPath> -->
 					<pushImage>true</pushImage><!-- 创建完docker image 后是否 push 到docker register，也可以在maven命令中用 

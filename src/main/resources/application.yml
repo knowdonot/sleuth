@@ -10,7 +10,7 @@ spring:
           brokers: 10.167.202.187:9092
           zk-nodes: 10.167.202.187:2181
   datasource: 
-    url: jdbc:mysql://localhost:3306/zipkin
+    url: jdbc:mysql://10.167.202.164:3306/zipkin
     username: root
     password: root
     initialize: true
