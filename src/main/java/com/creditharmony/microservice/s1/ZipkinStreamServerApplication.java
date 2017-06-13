@@ -2,6 +2,7 @@ package com.creditharmony.microservice.s1;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.sleuth.zipkin.stream.EnableZipkinStreamServer;
 /**
  * 日志跟踪服务
@@ -9,7 +10,7 @@ import org.springframework.cloud.sleuth.zipkin.stream.EnableZipkinStreamServer;
  * @author wangduo
  * @Create In 2017年6月9日
  */
-//@EnableDiscoveryClient
+@EnableDiscoveryClient
 @SpringBootApplication
 @EnableZipkinStreamServer
 public class ZipkinStreamServerApplication {
